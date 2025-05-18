@@ -2,7 +2,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 import joblib
-from preprocess import preprocess_data, load_data
+from src.preprocess import preprocess_data, load_data
 
 def train_model():
     df = load_data()
