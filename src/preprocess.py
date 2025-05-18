@@ -2,7 +2,11 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 def load_data():
-    return pd.read_csv('data/iris.csv')
+    return pd.read_csv(
+        'data/iris.csv',
+        header=None,
+        names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+    )
 
 def preprocess_data(df):
     # Handle missing values
